@@ -27,6 +27,7 @@ Just download the repo in your local machine. Remember to extract the dataset in
 `git clone https://github.com/lasdaou/Rock-Paper-Scissors-Agent.git`
 
 # Machine Learning
+Let's deep dive to the code :)
 
 ## Libaries used
 
