@@ -27,7 +27,7 @@ Just download the repo in your local machine. Remember to extract the dataset in
 `git clone https://github.com/lasdaou/Rock-Paper-Scissors-Agent.git`
 
 # Machine Learning
-Let's deep dive to the code :)
+Let's deep dive intto the code :)
 
 ## Libaries used
 
@@ -44,3 +44,46 @@ The Python version we used is: **3.10.9**
 1. *load_images_with_labels(folder, label, scale_factor=0.6):* Loads, resizes and normalizes images from a specified folder. It also assigns the labels to the images as mentioned before.
 2. *apply_random_transformations(image, p1=0.5, p2=0.5, noise_std=0.05):* Flips the image vertically and horizontally with probability 50% and also adds noise.
 3. *load_and_resize_images(folder, target_size=(120, 180)):* Just a function i used to resize my personal images i used for testing.
+
+## Machine Learning PipeLline
+
+We tried different ML classifiers and we chose the one with the best accuracy. You can see the results below:
+
+| Classifier | Accuracy |
+| ---------- | :--------- |
+| Random Forest | 0.965 |
+| MLP Classifier | 0.902 |
+| SVM | 0.911 |
+| Decision Trees | 0.831 |
+
+So, we will continue with `Random Forest`. <br>
+As future work, also CNNs can be used, which are very optimal in image recognition problems.
+
+*We used 20% of each symbol (rock, paper, scissors) as test set.*
+
+<h3>Training Results</h3>
+Our model did pretty well! Only 15 failed predictions of the test set, as we see on the below diagram:
+
+![incorrect_predictions](https://github.com/lasdaou/Rock-Paper-Scissors-Agent/assets/68003038/c8ab88fa-9edd-4a6d-83e3-c91782d7ebab)
+
+## How to Play
+
+Adjust the variables `rounds` and `starting_rounds` depending on how many rounds you want to play.
+
+The rules are:
+
+* Win --> 2 points
+* Draw --> 1 point
+* Loss --> -1 point
+<br>
+
+This is our agent's profil after 80 rounds:
+
+![profit](https://github.com/lasdaou/Rock-Paper-Scissors-Agent/assets/68003038/d6018a91-15c8-4ce3-9ac8-c161ef969df3)
+
+
+
+
+Enjoy!
+
+
