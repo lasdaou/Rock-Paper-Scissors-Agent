@@ -80,10 +80,13 @@ The rules are:
 This is our agent's profil after 80 rounds:
 
 ![profit](https://github.com/lasdaou/Rock-Paper-Scissors-Agent/assets/68003038/d6018a91-15c8-4ce3-9ac8-c161ef969df3)
+<br>
+<br>
 
 
+You can also try your own images. Just make a new folder with the images you want to use and put it in the same folder as the path of the dataset folders.
 
-
+<br>
 Enjoy!
 
 
